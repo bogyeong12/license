@@ -1,0 +1,38 @@
+# 팝빌 Java SDK SpringBoot Example
+#
+# - SpringBoot SDK 연동환경 설정방법 안내 : https://developers.popbill.com/guide/taxinvoice/java/getting-started/tutorial?fwn=springboot
+# - 업데이트 일자 : 2023-02-20
+# - 연동 기술지원 연락처 : 1600-9854
+# - 연동 기술지원 이메일 : code@linkhubcorp.com
+#
+# <테스트 연동개발 준비사항>
+# 1) 15번 17번 라인에 선언된 링크아이디(LinkID)와 비밀키(SecretKey)를
+#    연동 신청시 메일로 발급받은 인증정보를 참조하여 변경합니다.
+#
+
+
+popbill:
+  #링크아이디
+  linkId: SBDC
+  #비밀키
+  secretKey: gJS1OsMs4Ytry4nnOZAA5sVWvkHS5JTTFuBI0zxxpU4=
+  #연동환경 설정값 true(개발용), false(상업용)
+  isTest: true
+  #인증토큰 아이피 제한 기능 사용여부 true(사용-권장), false(미사용)
+  isIpRestrictOnOff: true
+  #팝빌 API 서비스 고정 IP 사용여부 true(사용), false(미사용)
+  useStaticIp: false
+  #로컬시스템 시간 사용여부 true(사용-권장), false(미사용)
+  useLocalTimeYn: true
+
+
+spring:
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306
+    username : root
+    password : sbdc6678!
+
+mybatis:
+  type-aliases-package: org.sbdc.licensealarm
+  mapper-locations: mapper/**/*.xml
