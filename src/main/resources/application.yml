@@ -33,6 +33,3 @@ spring:
     username : root
     password : sbdc6678!
 
-mybatis:
-  type-aliases-package: org.sbdc.licensealarm
-  mapper-locations: mapper/**/*.xml
