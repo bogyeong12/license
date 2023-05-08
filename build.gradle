@@ -28,7 +28,7 @@ repositories {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'kr.co.linkhub:popbill-spring-boot-starter:1.8.1'
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
 }
 
 
