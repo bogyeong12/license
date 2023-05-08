@@ -3,7 +3,6 @@ package org.sbdc.licensealarm.controller;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Locale;
-import java.util.Random;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
