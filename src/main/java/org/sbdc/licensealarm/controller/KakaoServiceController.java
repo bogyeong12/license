@@ -3,8 +3,11 @@ package org.sbdc.licensealarm.controller;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
 
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +25,7 @@ import com.popbill.api.kakao.KakaoSentInfo;
 import com.popbill.api.kakao.KakaoType;
 import com.popbill.api.kakao.PlusFriendID;
 import com.popbill.api.kakao.SenderNumber;
+
 
 @Controller
 @RequestMapping("KakaoService")
@@ -260,6 +264,7 @@ public class KakaoServiceController {
         // 전송요청번호
         // 팝빌이 접수 단위를 식별할 수 있도록 파트너가 할당한 식별번호.
         // 1~36자리로 구성. 영문, 숫자, 하이픈(-), 언더바(_)를 조합하여 팝빌 회원별로 중복되지 않도록 할당.
+
         String requestNum = "20230508_ats_04";
 
         // 알림톡 버튼정보를 템플릿 신청시 기재한 버튼정보와 동일하게 전송하는 경우 null 처리.
