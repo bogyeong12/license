@@ -274,7 +274,7 @@ public class KakaoServiceController {
 
         System.out.println("오늘 날짜:"+formattedDate);
 
-        //여기에 리스트 no 불러오기
+        //나중에 COUNT 불러오고 바꾸기
         Random random = new Random();
         int randomNum = random.nextInt();
         String randomTest = String.valueOf(randomNum);
