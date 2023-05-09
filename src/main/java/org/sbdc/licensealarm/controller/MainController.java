@@ -12,6 +12,6 @@ public class MainController {
 
     @RequestMapping(value = "testListPage", method = RequestMethod.GET)
     public String home(Locale locale, Model model) {
-        return "testListPage";
+        return "test/testList";
     }
 }
